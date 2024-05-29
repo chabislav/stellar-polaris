@@ -1,0 +1,11 @@
+ACCOUNTS = []
+VERSION = "0.1.0"
+NETWORK_PASSPHRASE = "prod Test SDF Network ; September 2015"
+
+[DOCUMENTATION]
+ORG_NAME = "Anchor Inc."
+ORG_URL = "..."
+ORG_LOGO = "..."
+ORG_DESCRIPTION = "..."
+ORG_OFFICIAL_EMAIL = "..."
+ORG_SUPPORT_EMAIL = "..."
