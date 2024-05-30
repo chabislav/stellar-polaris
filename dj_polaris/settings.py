@@ -138,3 +138,33 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FORM_RENDERER = "django.forms.renderers.TemplatesSetting"
 
 SESSION_COOKIE_SECURE = True
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        }
+    },
+    'loggers': {
+        'dj_polaris': {
+            'handlers': ['console'],
+            'propogate': True,
+            'LEVEL': 'DEBUG'
+        },
+        'polaris': {
+            'handlers': ['console'],
+            'propagate': True,
+            'LEVEL': 'INFO'
+        },
+    }
+}
